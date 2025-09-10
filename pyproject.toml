@@ -1,5 +1,4 @@
-[
-build-system]
+[build-system]
 requires = [
   "setuptools>=66",
   "wheel"
@@ -39,4 +38,3 @@ Issues = "https://github.com/SPraet/SW-transformation/issues"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["SW*"]
-
