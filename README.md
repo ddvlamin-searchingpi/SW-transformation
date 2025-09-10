@@ -13,16 +13,19 @@ Requirements: numpy
 ```
 pip install numpy
 ```
-To build and install on your local machine, download and unzip the repository and run from there:
+
+Install from Github:
 
 ```
-python setup.py install
+pip install https://github.com/ddvlamin-searchingpi/SW-transformation
 ```
 
-Or you can automatically download and install from the PyPI repository:
+Install from a local checkout (modern build):
 
 ```
-pip install SW-transformation
+pip install .
+# or for editable installs during development
+pip install -e .
 ```
 ## Usage
 The SW transformation can be used to calculate the probability of a node in a bipartite graph to belong to the positive class. Three top node weight functions are included: simple weight assignment, inverse degree and hyperbolic tangent. Users can also directly insert the top node weights, using their own weight function.
@@ -69,7 +72,7 @@ Stiene Praet <stiene.praet@uantwerp.be>
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/SPraet/SW-transformation/blob/master/LICENSE) file for details
+This project is licensed under the MIT License — see the `LICENSE` file for details.
 
 
 ## Acknowledgements
@@ -77,5 +80,3 @@ Based on the work of Marija Stankova, David Martens and Foster Provost
 
 ## References
 Stankova, M., Martens, D., & Provost, F. (2015). Classification over bipartite graphs through projection. (Research paper / University of Antwerp. Faculty of Applied Economics ; 2015-001 D/2015/1169/001). Full text (open access): https://repository.uantwerpen.be/docman/irua/07acff/c5909d64.pdf
-
-

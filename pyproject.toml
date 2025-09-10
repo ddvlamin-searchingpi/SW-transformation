@@ -1,0 +1,42 @@
+[
+build-system]
+requires = [
+  "setuptools>=66",
+  "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sw-transformation"
+version = "0.1.0"
+description = "Fast classifier for binary node classification in bipartite graphs"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Stiene Praet", email = "stiene.praet@uantwerp.be" }
+]
+keywords = ["bipartite-graphs", "classification", "graph", "wvRN", "machine-learning"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+  "numpy>=1.18"
+]
+
+[project.urls]
+Homepage = "https://github.com/SPraet/SW-transformation"
+Repository = "https://github.com/SPraet/SW-transformation"
+Issues = "https://github.com/SPraet/SW-transformation/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["SW*"]
+
