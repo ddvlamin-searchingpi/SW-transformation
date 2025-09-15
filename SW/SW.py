@@ -81,7 +81,7 @@ class SW_transformation:
         if len(top_node_weights) != X.shape[1]:
           raise ValueError('please make sure your weight_function outputs top node weights with the correct dimensions (n_top_nodes=X.shape[1],)')
            
-        nsk = np.squeeze(X.T*y)
+        nsk = np.squeeze(X.T @ y)
         self.coef_= np.reshape(nsk*top_node_weights,(1,X.shape[1]))
 
         X_sum_0 = _top_sum(X)
