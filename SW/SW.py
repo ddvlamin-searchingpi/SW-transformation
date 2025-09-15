@@ -104,8 +104,8 @@ class SW_transformation:
         if _check_adjacency(X):
           raise ValueError("Input matrix X should only contain ones or zeros")
         
-        top_node_sum= X*self.coef_.T
-        Z_sum=X*self.Z_.T
+        top_node_sum= X @ self.coef_.T
+        Z_sum=X @ self.Z_.T
         scores = np.divide(top_node_sum, Z_sum+EPS)
         scores = np.hstack((1.0-scores,scores))
         return scores
