@@ -110,8 +110,8 @@ class SW_transformation:
         Z_sum=X @ self.Z_.T
         scores = np.divide(top_node_sum, Z_sum+EPS)
         scores = np.hstack((1.0-scores,scores))
-        return 
-        
+        return scores
+
     def decision_function(self, X):
         prob = self.predict_proba(X)[:,1]
         return prob
